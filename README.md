@@ -9,7 +9,7 @@ Install the requirements
 
 Run the following commant to download the pre-trained embeddings
 
-`sh download.sh` 
+`./download.sh` 
 
 # Usage
 Results on the test set
