@@ -1,4 +1,4 @@
-# Paraphrase Detection for the Portuguese Languaga
+# Paraphrase Detection for the Portuguese Language
 
 # Dependencies
 Python 3
