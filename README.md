@@ -1,23 +1,25 @@
 # Paraphrase Detection for the Portuguese Language
 
-# Dependencies
-Python 3
+```
+@inproceedings{anchietaEpardo2020,
+    title = {Exploring the Potentiality of Semantic Features for Paraphrase Detection},
+    author = {Anchi\^{e}ta, Rafael Torres and Pardo, Thiago Alexandre Salgueiro Pardo},
+    booktitle = {Proceedings of the 14th International Conference on the Computational Processing of Portuguese},
+    year = {2020},
+}
+```
 
-Install the requirements
+# Requirements
+- Python 3
 
-`pip install -r requirements.txt`
+- Install the requirements
 
-Run the following commant to download the pre-trained embeddings
+    `pip install -r requirements.txt`
 
-`./download.sh` 
+- Run the following commant to download the pre-trained embeddings
+
+    `./download.sh` 
 
 # Usage
-Results on the test set
 
-`python3 classification.py`
-
-# ToDo
-- [x] Executar o parser AMR nos pares de sentenças
-- [x] Avaliar a similaridade usando a métrica SEMA
-- [x] Analisar se as senteças mais similares são paráfrase
-- [x] Incluir outras features (classificação)
+`python3 detect.py -s1 hypo.txt -s2 test.txt`
