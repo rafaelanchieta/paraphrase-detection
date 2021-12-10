@@ -1,4 +1,4 @@
 gensim==3.8.0
 joblib==0.13.2
-nltk==3.4.5
+nltk
 scipy==1.3.1
