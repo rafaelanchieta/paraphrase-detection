@@ -5,7 +5,7 @@ from prediction import Prediction
 
 
 def main(data):
-    features = ExtractFeatures('models/skip300.txt', data.hypo, data.test).extract_features()
+    features = ExtractFeatures('models/embeddings', data.hypo, data.test).extract_features()
     print(Prediction('trained-model/svm.pkl').predict(features))
 
 
