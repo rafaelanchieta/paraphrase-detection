@@ -9,7 +9,7 @@ from scipy import spatial
 class ExtractFeatures:
 
     def __init__(self, model, input_h, input_t):
-        self.model = KeyedVectors.load_word2vec_format(model)
+        self.model = KeyedVectors.load(model, mmap='r')
         self.input_h = self.read_file(input_h)
         self.input_t = self.read_file(input_t)
 
